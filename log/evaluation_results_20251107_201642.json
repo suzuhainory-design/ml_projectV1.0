@@ -1,0 +1,23 @@
+{
+  "catboost_accuracy": 0.8885714285714286,
+  "xgboost_accuracy": 0.8857142857142857,
+  "lightgbm_accuracy": 0.8885714285714286,
+  "ensemble_accuracy": 0.8971428571428571,
+  "ensemble_weights": [
+    0.33369098712446355,
+    0.33261802575107297,
+    0.33369098712446355
+  ],
+  "ensemble_threshold": 0.46000000000000013,
+  "confusion_matrix": [
+    [
+      291,
+      6
+    ],
+    [
+      30,
+      23
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n          留任       0.91      0.98      0.94       297\n          离职       0.79      0.43      0.56        53\n\n    accuracy                           0.90       350\n   macro avg       0.85      0.71      0.75       350\nweighted avg       0.89      0.90      0.88       350\n"
+}

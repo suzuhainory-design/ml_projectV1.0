@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# 临时文件
+*.log
+*.tmp
+*.bak
+*~
+
+# 数据文件（可选，如果不想上传大文件）
+# *.csv
+
+# CatBoost临时文件
+catboost_info/
+
+# 旧版本模型（保留最新的）
+model_*.pkl
+best_*.pkl
+*_optimized.pkl
+stacking_ensemble.pkl
+catboost_smote.pkl
+xgb_smote_v2.pkl
+lgbm_smote_v2.pkl
+final_catboost.pkl
+final_xgboost.pkl
+final_lightgbm.pkl
+final_ensemble_info.pkl
+
+# 中间结果文件
+*_log.txt
+*_results.csv
+feature_importance.csv
+feature_info.json
+data_summary.txt
+attrition_correlation.txt
+industry_turnover_data.txt
+job_role_turnover_data.txt
+
+# 图片文件（如果太大）
+# *.png
+
+# 增强数据文件
+train_enhanced.csv
+test_enhanced.csv
+
+# 缩放后的数据
+X_*_scaled.csv
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
