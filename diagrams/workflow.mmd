@@ -1,0 +1,39 @@
+graph LR
+    subgraph "阶段1: 数据探索"
+        A[加载数据] --> B[数据分析]
+        B --> C[特征分析]
+        C --> D[可视化]
+    end
+    
+    subgraph "阶段2: 数据增强"
+        E[收集外部数据] --> F[整合数据]
+        F --> G[创建新特征]
+    end
+    
+    subgraph "阶段3: 特征工程"
+        H[移除无用特征] --> I[创建衍生特征]
+        I --> J[类别编码]
+        J --> K[特征缩放]
+    end
+    
+    subgraph "阶段4: 模型训练"
+        L[SMOTE平衡] --> M[训练多模型]
+        M --> N[超参数优化]
+        N --> O[集成学习]
+    end
+    
+    subgraph "阶段5: 模型部署"
+        P[保存模型] --> Q[测试验证]
+        Q --> R[推送GitHub]
+    end
+    
+    D --> E
+    G --> H
+    K --> L
+    O --> P
+    
+    style A fill:#e3f2fd
+    style E fill:#fff3e0
+    style H fill:#f3e5f5
+    style L fill:#e8f5e9
+    style P fill:#fce4ec
