@@ -234,7 +234,7 @@ print(f"失败: {failed_tests} ❌")
 print(f"通过率: {passed_tests/total_tests*100:.1f}%")
 
 # 保存测试报告
-report_file = f'log/test_report_{datetime.now().strftime("%Y%m%d_%H%M%S")}.txt'
+report_file = f'log/test_report_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'
 with open(report_file, 'w', encoding='utf-8') as f:
     f.write("=" * 80 + "\n")
     f.write("自动化测试报告\n")

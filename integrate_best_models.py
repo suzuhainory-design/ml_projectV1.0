@@ -279,7 +279,7 @@ def main():
     }
     
     import json
-    with open(os.path.join('log', f'evaluation_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join('log', f'evaluation_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'), 'w', encoding='utf-8') as f:
         json.dump(results_summary, f, indent=2, ensure_ascii=False)
     
     logger.info("\n" + "=" * 80)
